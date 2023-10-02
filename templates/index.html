@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+<!---->
+{% block title %} หน้าแรก {% endblock title %}
+<!---->
+{% block content %}
+<!---->
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ชื่อ</th>
+      <th scope="col">นามสกุล</th>
+      <th scope="col">เพศ</th>
+      <th scope="col">อายุ</th>
+      <th scope="col">ระดับการศึกษา</th>
+      <th scope="col">แผนกงานที่สังกัด</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for course in informations %}
+    <tr>
+      <td>{{ course.fname }}</td>
+      <td>{{ course.lname }}</td>
+      <td>{{ course.gender }}</td>
+      <td>{{ course.age }}</td>
+      <td>{{ course.elevel }}</td>
+      <td>{{ course.department }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock content %}
