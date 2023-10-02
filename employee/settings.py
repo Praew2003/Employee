@@ -82,7 +82,9 @@ DATABASES = {
         'PASSWORD': '123456789praewpan',
         'HOST': 'db.efjbiiyxnemzyxgdinty.supabase.co',
         'PORT': '5432',
+    
     }
+    
 }
 
 
